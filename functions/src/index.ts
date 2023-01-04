@@ -31,6 +31,5 @@ export const createdNewLanguage = functions.firestore
         
         await Promise.all(asyncJobs);
         await snap.ref.set(newLanguage);
-        console.log('name changed->', newLanguage, vars);
-        // perform desired operations ...
     });
+    
